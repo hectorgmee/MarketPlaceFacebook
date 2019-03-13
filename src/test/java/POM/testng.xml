@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GRID SAMPLE TEST" parallel="tests" thread-count="3">
+    <test name="GRID TEST WITH SERIAL EXECTION WITH BROWSER C">
+        <parameter name ="browser" value="chrome"/>
+        <classes>
+            <class name ="POM.GridExample"/>
+        </classes>
+    </test>
+    <test name="GRID WITHFF">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="POM.GridExample"></class>
+        </classes>
+    </test>
+</suite>
